@@ -18,6 +18,7 @@ h3{
 .project{
   width:50%;
   margin-top: 1em;
+  padding: 0.5em;
   background: linear-gradient(45deg, var(--pink), var(--green)); /* Definición del degradado */
   border-radius: 1em;
   box-shadow: 5px 5px 20px rgba(254, 77, 95, 0.5);
@@ -30,6 +31,7 @@ h3{
   display: flex;
   justify-content: center;
   margin: 1em 0 1em 0;
+  flex-wrap: wrap;
   gap: .25em;
 }
 .skill-item{
@@ -49,7 +51,12 @@ h3{
     flex-direction: column;
     align-items: center;
   }
-  .skill-list{
-    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  /* Estilos para pantallas menores a 1000px */
+  /* Puedes agregar aquí tus estilos específicos */
+  .projects{
+    font-size: 0.60em;
   }
 }

@@ -25,3 +25,14 @@ h4 {
   background-position: 0 100%; /* Ubicación del subrayado */
   background-repeat: no-repeat;
 }
+
+@media (max-width: 600px) {
+  /* Estilos para pantallas menores a 1000px */
+  /* Puedes agregar aquí tus estilos específicos */
+  h4{
+    font-size:2em;
+  }
+  .img-container{
+    width:40px;
+  }
+}
