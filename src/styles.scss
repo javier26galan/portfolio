@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@fortawesome/fontawesome-free/css/all.css';
 :root{
   --primary: #944dfe;
   --secondary: #ed4dfe;
@@ -24,13 +25,22 @@ h2,
 h3,
 h4,
 p,
+ul,
+li,
 figure,
 blockquote,
 dl,
 dd {
   margin: 0;
 }
-
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+a{
+  color: var(--wletter);
+  text-decoration: none;
+}
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
@@ -87,3 +97,6 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
