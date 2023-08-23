@@ -8,21 +8,24 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { NavComponent } from './components/nav/nav.component';
+import { GradientBackgroundDirective } from './shared/gradient-background.directive';
+import { ColorService } from './shared/color.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    GradientBackgroundDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
   ],
-  providers: [],
+  providers: [ColorService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

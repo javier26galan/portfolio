@@ -1,25 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@fortawesome/fontawesome-free/css/all.css';
-:root{
+@import "~@fortawesome/fontawesome-free/css/all.css";
+:root {
   --primary: #944dfe;
   --secondary: #ed4dfe;
-  --pink:rgb(201,104,142);
-  --green:rgb(74,184,64);
+  --pink: #c9688e;
+  --green: #4ab840;
   --info: #fe4db7;
-  --warning:#fe4d5f;
-  --accent:#fe944d;
+  --warning: #fe4d5f;
+  --accent: #fe944d;
   --background: #1d1d20;
-  --dletter:#1b1a1a;
-  --wletter:#d2d2d2;
+  --dletter: #1b1a1a;
+  --wletter: #d2d2d2;
 }
 .gradient-underline {
   display: inline-block;
-  background-image: linear-gradient(to right, #e334d0, #74ee15);
   background-size: 100% 2px; /* Grosor del subrayado */
   background-position: 0 100%; /* Ubicación del subrayado */
   background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #e334d0, #74ee15);
+  &-welcome {
+    background-image: linear-gradient(to right, #e334d0, #74ee15);
+  }
+  &-skills {
+    background-image: linear-gradient(to right, #e334d0, #74ee15);
+  }
+  &-experience {
+    background-image: linear-gradient(to right, #e334d0, #74ee15);
+  }
+  &-projects {
+    background-image: linear-gradient(to right, #e334d0, #74ee15);
+  }
 }
-
 
 /* Box sizing rules */
 *,
@@ -43,17 +54,17 @@ dl,
 dd {
   margin: 0;
 }
-ul{
+ul {
   list-style-type: none;
   padding: 0;
 }
-a{
+a {
   color: var(--wletter);
   text-decoration: none;
 }
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -67,7 +78,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--background);
   color: var(--wletter);
 }
@@ -95,7 +106,7 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
 
   *,
@@ -108,5 +119,11 @@ select {
   }
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
