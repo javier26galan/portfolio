@@ -1,0 +1,55 @@
+.content {
+width: 100%;
+}
+.jobs {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  gap: 1em;
+}
+h3{
+  font-size:1.25em;
+}
+
+.project{
+  width:50%;
+  margin-top: 1em;
+  background: linear-gradient(45deg, var(--pink), var(--green)); /* Definición del degradado */
+  border-radius: 1em;
+  box-shadow: 5px 5px 20px rgba(254, 77, 95, 0.5);
+  &-link{
+    font-size: 1em;
+  }
+}
+
+.skill-list{
+  display: flex;
+  justify-content: center;
+  margin: 1em 0 1em 0;
+  gap: .25em;
+}
+.skill-item{
+  border: 1px solid var(--accent);
+  background-color: var(--accent);
+  border-radius: 0.5em;
+  color: var(--dletter);
+  font-weight: bold;
+  padding: 0.25em;
+  font-size:0.75em;
+}
+
+@media (max-width: 999px) {
+  /* Estilos para pantallas menores a 1000px */
+  /* Puedes agregar aquí tus estilos específicos */
+  .projects{
+    flex-direction: column;
+    align-items: center;
+  }
+  .skill-list{
+    flex-wrap: wrap;
+  }
+}

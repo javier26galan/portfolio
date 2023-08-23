@@ -21,7 +21,7 @@
   width: 100%;
 }
 .router{
-  width:40%
+  width:80%
 }
 
 app-header,
@@ -35,4 +35,11 @@ app-footer {
     width: 900px;
   }
 
+}
+@media (max-width: 900px) {
+  /* Estilos para pantallas menores a 1000px */
+  /* Puedes agregar aquí tus estilos específicos */
+  .main{
+    flex-direction: column;
+  }
 }

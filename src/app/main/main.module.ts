@@ -6,6 +6,7 @@ import { SkilsComponent } from './components/skils/skils.component';
 import { PersonalComponent } from './components/personal/personal.component';
 import { JobComponent } from './components/job/job.component';
 import { ProjectComponent } from './components/project/project.component';
+import { SkillBarComponent } from './components/skill-bar/skill-bar.component';
 
 
 
@@ -16,6 +17,7 @@ import { ProjectComponent } from './components/project/project.component';
     PersonalComponent,
     JobComponent,
     ProjectComponent,
+    SkillBarComponent,
   ],
   imports: [
     CommonModule,

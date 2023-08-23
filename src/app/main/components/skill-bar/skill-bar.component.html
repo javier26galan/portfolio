@@ -1,0 +1,8 @@
+<div class="skills">
+  <div *ngFor="let skill of skills" class="skill">
+    <div class="skill-name">{{ skill.name }}</div>
+    <div class="progress">
+      <div class="progress-bar" [style.width.%]="skill.progress"></div>
+    </div>
+  </div>
+</div>

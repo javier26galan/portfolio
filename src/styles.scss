@@ -3,6 +3,8 @@
 :root{
   --primary: #944dfe;
   --secondary: #ed4dfe;
+  --pink:rgb(201,104,142);
+  --green:rgb(74,184,64);
   --info: #fe4db7;
   --warning:#fe4d5f;
   --accent:#fe944d;
@@ -10,6 +12,14 @@
   --dletter:#1b1a1a;
   --wletter:#d2d2d2;
 }
+.gradient-underline {
+  display: inline-block;
+  background-image: linear-gradient(to right, #e334d0, #74ee15);
+  background-size: 100% 2px; /* Grosor del subrayado */
+  background-position: 0 100%; /* Ubicación del subrayado */
+  background-repeat: no-repeat;
+}
+
 
 /* Box sizing rules */
 *,
