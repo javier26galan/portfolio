@@ -30,7 +30,7 @@ export class GradientBackgroundDirective {
     const primaryColor = pattern.primary;
     const secondaryColor = pattern.secondary;
 
-    const gradientStyle = `linear-gradient(to bottom, ${primaryColor}, ${secondaryColor})`;
+    const gradientStyle = `linear-gradient(45deg, ${primaryColor}, ${secondaryColor})`;
     this.renderer.setStyle(this.el.nativeElement, 'background', gradientStyle);
   }
 }

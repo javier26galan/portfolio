@@ -19,16 +19,19 @@
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, #e334d0, #74ee15);
   &-welcome {
-    background-image: linear-gradient(to right, #e334d0, #74ee15);
+    background-image: linear-gradient(to right, #944dfe, #fe944d);
   }
   &-skills {
-    background-image: linear-gradient(to right, #e334d0, #74ee15);
+    background-image: linear-gradient(to right, var(--waring), var(--accent));
   }
   &-experience {
-    background-image: linear-gradient(to right, #e334d0, #74ee15);
+    background-image: linear-gradient(to right, var(--pink), var(--green));
   }
   &-projects {
-    background-image: linear-gradient(to right, #e334d0, #74ee15);
+    background-image: linear-gradient(to right, #18dcff, #e334d0);
+  }
+  &-personal {
+    background-image: linear-gradient(to right, var(--warning), var(--green));
   }
 }
 
