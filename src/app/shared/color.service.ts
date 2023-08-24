@@ -29,6 +29,10 @@ export class ColorService {
       primary: '#18dcff',
       secondary: '#e334d0',
     },
+    personal: {
+      primary: '#fe4d5f',
+      secondary: '#4ab840',
+    },
   };
 
   constructor() {

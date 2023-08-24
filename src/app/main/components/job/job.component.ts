@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ColorPattern } from 'src/app/interfaces/colorPatter.interface';
+import { ColorService } from 'src/app/shared/color.service';
 
 @Component({
   selector: 'app-job',
@@ -29,6 +31,16 @@ export class JobComponent implements OnInit {
       ],
     },
   ];
+  colors!: ColorPattern;
 
-  ngOnInit(): void {}
+  constructor(private colorService: ColorService) {}
+
+  ngOnInit() {
+    this.colorService.setPattern('experience');
+    this.colorService.colorPattern$.subscribe((pattern) => {
+      this.colors = pattern;
+      console.log('job comp', pattern);
+    });
+  }
+
 }

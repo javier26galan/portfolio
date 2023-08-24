@@ -2,7 +2,7 @@
   width: 75px;
   border-radius: 50px;
   overflow: hidden;
-  box-shadow: 0px 10px 20px #e334d0;
+  box-shadow: 0px 10px 20px var(--warning);
   img {
     filter: grayscale(100%);
   }
@@ -17,13 +17,6 @@ h4 {
 }
 .row{
   margin-bottom: 1em;
-}
-.gradient-underline {
-  display: inline-block;
-  background-image: linear-gradient(to right, #e334d0, #74ee15);
-  background-size: 100% 2px; /* Grosor del subrayado */
-  background-position: 0 100%; /* Ubicación del subrayado */
-  background-repeat: no-repeat;
 }
 
 @media (max-width: 600px) {

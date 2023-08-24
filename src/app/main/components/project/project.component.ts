@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ColorPattern } from 'src/app/interfaces/colorPatter.interface';
+import { ColorService } from 'src/app/shared/color.service';
 
 @Component({
   selector: 'app-project',
@@ -21,5 +23,15 @@ export class ProjectComponent implements OnInit {
     },
   ];
 
-  ngOnInit(): void {}
+  colors!: ColorPattern;
+
+  constructor(private colorService: ColorService) {}
+
+  ngOnInit() {
+    this.colorService.setPattern('projects');
+    this.colorService.colorPattern$.subscribe((pattern) => {
+      this.colors = pattern;
+      console.log('projects', pattern);
+    });
+  }
 }
