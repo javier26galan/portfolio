@@ -7,7 +7,8 @@ import { PersonalComponent } from './components/personal/personal.component';
 import { JobComponent } from './components/job/job.component';
 
 const routes: Routes = [
-  { path: '', component: MainComponent },
+  { path: '', redirectTo: 'welcome', pathMatch: 'full' },
+  { path: 'welcome', component: MainComponent },
   { path: 'skills', component: SkilsComponent },
   { path: 'projects', component: ProjectComponent },
   { path: 'about-me', component: PersonalComponent },

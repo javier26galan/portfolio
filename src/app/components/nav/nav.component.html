@@ -1,10 +1,19 @@
 <nav>
   <ul>
-    <li><a class="gradient-underline" routerLink="" appActiveLink>Welcome</a></li>
+    <li>
+      <a
+        class="gradient-underline"
+        routerLink="welcome"
+        [routerLinkActive]="['is-active']"
+        appActiveLink
+        >Welcome</a
+      >
+    </li>
     <li>
       <a
         class="gradient-underline"
         routerLink="skills"
+        [routerLinkActive]="['is-active']"
         appActiveLink
         >Skills</a
       >
@@ -13,6 +22,7 @@
       <a
         class="gradient-underline"
         routerLink="experience"
+        [routerLinkActive]="['is-active']"
         appActiveLink
         >Experience</a
       >
@@ -21,6 +31,7 @@
       <a
         class="gradient-underline"
         routerLink="projects"
+        [routerLinkActive]="['is-active']"
         appActiveLink
         >Own Projects</a
       >
@@ -29,6 +40,7 @@
       <a
         class="gradient-underline"
         routerLink="about-me"
+        [routerLinkActive]="['is-active']"
         appActiveLink
         >About me</a
       >

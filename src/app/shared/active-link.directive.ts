@@ -17,7 +17,6 @@ export class ActiveLinkDirective implements OnInit {
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
         const currentUrl = this.router.routerState.snapshot.url;
-        console.log('current url', currentUrl);
         this.removePreviousClasses();
 
         let activeClass = '';
@@ -31,7 +30,7 @@ export class ActiveLinkDirective implements OnInit {
           activeClass = 'gradient-underline-skills';
         } else if (currentUrl === '/experience') {
           activeClass = 'gradient-underline-experience';
-        } else if (currentUrl === '/') {
+        } else if (currentUrl === '/welcome') {
           activeClass = 'gradient-underline-welcome';
         }
 

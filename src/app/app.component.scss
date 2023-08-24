@@ -20,6 +20,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 40vh;
 }
 .router {
   margin: 1em 0 3em 0;
@@ -42,6 +43,7 @@ app-footer {
   /* Puedes agregar aquí tus estilos específicos */
   .main {
     flex-direction: column;
+    height:auto;
   }
   app-header,
   app-footer {
