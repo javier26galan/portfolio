@@ -21,7 +21,7 @@ export class ProjectComponent implements OnInit {
       name: 'Memory Game',
       imgUrl: '../../../../assets/images/memorygame.jpg',
       url: 'https://github.com/javier26galan/angular-pokemon-app',
-      tecs: ['HTML', 'CSS', 'ANGULAR', 'FIREBASE'],
+      tecs: ['HTML & CSS', 'ANGULAR', 'FIREBASE'],
     },
     {
       name: 'Quizzer',
