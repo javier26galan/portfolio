@@ -23,6 +23,18 @@ export class ProjectComponent implements OnInit {
       url: 'https://github.com/javier26galan/angular-pokemon-app',
       tecs: ['HTML', 'CSS', 'ANGULAR', 'FIREBASE'],
     },
+    {
+      name: 'Quizzer',
+      imgUrl: '../../../../assets/images/quizzer.png',
+      url: 'https://github.com/javier26galan/quizz-game-app',
+      tecs: ['Python'],
+    },
+    {
+      name: 'Todo-app',
+      imgUrl: '../../../../assets/images/todo-app-v3.png',
+      url: 'https://github.com/javier26galan/todo-app-v3',
+      tecs: ['MEAN STACK', 'ANGULAR MATERIAL'],
+    },
   ];
 
   colors!: ColorPattern;

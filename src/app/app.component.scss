@@ -50,3 +50,14 @@ app-footer {
     width: 80%;
   }
 }
+@media (max-width: 800px){
+  .container{
+    height: auto;
+  }
+  .content{
+    height:auto;
+  }
+  .main{
+    height:auto;
+  }
+}
