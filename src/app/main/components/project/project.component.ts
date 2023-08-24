@@ -27,7 +27,7 @@ export class ProjectComponent implements OnInit {
       name: 'Quizzer',
       imgUrl: '../../../../assets/images/quizzer.png',
       url: 'https://github.com/javier26galan/quizz-game-app',
-      tecs: ['Python'],
+      tecs: ['Python', 'API REST'],
     },
     {
       name: 'Todo-app',
