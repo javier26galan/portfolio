@@ -10,6 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { NavComponent } from './components/nav/nav.component';
 import { GradientBackgroundDirective } from './shared/gradient-background.directive';
 import { ColorService } from './shared/color.service';
+import { ActiveLinkDirective } from './shared/active-link.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ColorService } from './shared/color.service';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    GradientBackgroundDirective
+    GradientBackgroundDirective,
+    ActiveLinkDirective
   ],
   imports: [
     BrowserModule,

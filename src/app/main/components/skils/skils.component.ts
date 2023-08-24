@@ -16,7 +16,6 @@ export class SkilsComponent implements OnInit {
     this.colorService.setPattern('skills');
     this.colorService.colorPattern$.subscribe((pattern) => {
       this.colors = pattern;
-      console.log('main', pattern);
     });
   }
 }

@@ -16,7 +16,6 @@ export class MainComponent implements OnInit {
     this.colorService.setPattern('welcome');
     this.colorService.colorPattern$.subscribe((pattern) => {
       this.colors = pattern;
-      console.log('main', pattern);
     });
   }
   ngDestroy() {

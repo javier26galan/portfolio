@@ -17,7 +17,6 @@ export class AppComponent {
     this.colorService.setPattern('experience');
     this.colorService.colorPattern$.subscribe((pattern) => {
       this.colors = pattern;
-      console.log("app",pattern);
     });
   }
 }

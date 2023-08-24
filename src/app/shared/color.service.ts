@@ -35,11 +35,7 @@ export class ColorService {
     },
   };
 
-  constructor() {
-    this.colorPattern$.subscribe((pattern) => {
-      console.log('constructor colorService:', pattern);
-    });
-  }
+  constructor() {}
 
   getColors(): ColorPattern {
     return this.colorPatternSubject.value;

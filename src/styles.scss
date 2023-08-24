@@ -14,7 +14,7 @@
 }
 .gradient-underline {
   display: inline-block;
-  background-size: 100% 2px; /* Grosor del subrayado */
+  background-size: 100% 4px; /* Grosor del subrayado */
   background-position: 0 100%; /* Ubicación del subrayado */
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, #e334d0, #74ee15);
@@ -22,7 +22,7 @@
     background-image: linear-gradient(to right, #944dfe, #fe944d);
   }
   &-skills {
-    background-image: linear-gradient(to right, var(--waring), var(--accent));
+    background-image: linear-gradient(to right, var(--warning), var(--accent));
   }
   &-experience {
     background-image: linear-gradient(to right, var(--pink), var(--green));

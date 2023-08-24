@@ -17,10 +17,8 @@ export class GradientBackgroundDirective {
     private renderer: Renderer2,
     private colorService: ColorService
   ) {
-    console.log("directiva");
     this.colorSubscription = this.colorService.colorPattern$.subscribe(
       (pattern) => {
-        console.log('directiva', pattern);
         this.applyGradient(pattern);
       }
     );

@@ -31,7 +31,6 @@ export class ProjectComponent implements OnInit {
     this.colorService.setPattern('projects');
     this.colorService.colorPattern$.subscribe((pattern) => {
       this.colors = pattern;
-      console.log('projects', pattern);
     });
   }
 }

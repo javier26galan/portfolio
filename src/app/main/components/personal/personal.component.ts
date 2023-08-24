@@ -16,7 +16,6 @@ export class PersonalComponent implements OnInit {
     this.colorService.setPattern('personal');
     this.colorService.colorPattern$.subscribe((pattern) => {
       this.colors = pattern;
-      console.log('projects', pattern);
     });
   }
 }

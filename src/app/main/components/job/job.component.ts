@@ -39,7 +39,6 @@ export class JobComponent implements OnInit {
     this.colorService.setPattern('experience');
     this.colorService.colorPattern$.subscribe((pattern) => {
       this.colors = pattern;
-      console.log('job comp', pattern);
     });
   }
 
